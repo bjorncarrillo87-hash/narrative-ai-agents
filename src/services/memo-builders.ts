@@ -146,3 +146,4 @@ function formatPrice(price: number): string {
   return str.replace(/0+$/, '').replace(/\.$/, '.0');
 }
 
+

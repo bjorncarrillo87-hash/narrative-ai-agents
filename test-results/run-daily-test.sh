@@ -1,6 +1,6 @@
 #!/bin/bash
 # ══════════════════════════════════════════════════════════════
-#  JUNGLE KABAL — DAILY TEST RUNNER (v9.6 Frozen Build)
+#  Narrative AI — DAILY TEST RUNNER (v9.6 Frozen Build)
 # ══════════════════════════════════════════════════════════════
 #
 #  USAGE:  cd ~/Narrative_AI_Agent_Kabal && bash test-results/run-daily-test.sh
@@ -28,7 +28,7 @@ cd "$PROJECT_DIR"
 
 echo ""
 echo "══════════════════════════════════════════════════════════"
-echo "  JUNGLE KABAL — DAILY TEST RUNNER"
+echo "  Narrative AI — DAILY TEST RUNNER"
 echo "  Version: v9.6 (frozen commit: $FROZEN_COMMIT)"
 echo "  Duration: 60 minutes"
 echo "  Output:   $OUTPUT_FILE"
@@ -41,7 +41,7 @@ echo "[1/5] Current branch: $ORIGINAL_BRANCH"
 
 # ── Fetch and checkout frozen commit ──
 echo "[2/5] Fetching v9.6 branch..."
-git fetch origin claude/create-jungle-kabal-team-LV4ez 2>/dev/null
+git fetch origin claude/create-narrative-ai-team-LV4ez 2>/dev/null
 echo "[2/5] Checking out frozen commit $FROZEN_COMMIT (detached HEAD)..."
 git checkout "$FROZEN_COMMIT" 2>/dev/null
 
@@ -94,3 +94,4 @@ echo ""
 echo "Done! Now paste the output into Claude Code to generate the investor report."
 echo "Raw log: $OUTPUT_FILE"
 echo ""
+

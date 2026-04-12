@@ -6,7 +6,7 @@
 
 Narrative AI is a multi-agent system that autonomously detects emerging narratives and market sentiment across Solana, scores tokens in real time, and executes trades based on quantified signals — without human intervention.
 
-Built by **Bjorn Carrillo** in partnership with Jungle Kabal.
+Built by **Bjorn Carrillo** in partnership with Narrative AI.
 
 ---
 
@@ -90,4 +90,5 @@ GitHub: [@bjorncarrillo87-hash](https://github.com/bjorncarrillo87-hash)
 
 Copyright 2026 Bjorn Carrillo. All Rights Reserved.
 Shared for Colosseum Frontier Hackathon evaluation purposes only.
+
 

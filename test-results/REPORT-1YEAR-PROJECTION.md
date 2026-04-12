@@ -1,4 +1,4 @@
-# **JUNGLE KABAL v9.6 — 1-YEAR PROJECTED PERFORMANCE REPORT**
+# **Narrative AI v9.6 — 1-YEAR PROJECTED PERFORMANCE REPORT**
 
 ---
 
@@ -227,6 +227,7 @@
 
 ---
 
-> **Jungle Kabal v9.6** | Fibonacci Retracement Scalping | Solana PumpFun Tokens
+> **Narrative AI v9.6** | Fibonacci Retracement Scalping | Solana PumpFun Tokens
 > _1-Year Statistical Projection — Generated for investor review_
 > _Based on 2 live paper-trading sessions (51 trades) — April 2025_
+

@@ -1,4 +1,4 @@
-# **JUNGLE KABAL v9.6 — DAILY PERFORMANCE REPORT**
+# **Narrative AI v9.6 — DAILY PERFORMANCE REPORT**
 
 ---
 
@@ -80,5 +80,6 @@
 
 ---
 
-> **Jungle Kabal v9.6** | Fibonacci Retracement Scalping | Solana PumpFun Tokens
+> **Narrative AI v9.6** | Fibonacci Retracement Scalping | Solana PumpFun Tokens
 > _Report generated for investor review_
+

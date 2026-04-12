@@ -1,4 +1,4 @@
-# **JUNGLE KABAL — DAILY TEST RESULTS (v9.6)**
+# **Narrative AI — DAILY TEST RESULTS (v9.6)**
 
 ---
 
@@ -232,3 +232,4 @@ _Results are appended below after each 60-minute session._
 **Full report:** [`REPORT-2026-04-05.md`](REPORT-2026-04-05.md)
 
 ---
+
