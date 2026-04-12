@@ -2,6 +2,7 @@
 """Convert investor report markdown files to styled PDFs."""
 
 import sys
+import os
 import markdown
 from weasyprint import HTML
 
@@ -115,7 +116,7 @@ REPORTS = [
     ("REPORT-1YEAR-PROJECTION.md", "REPORT-1YEAR-PROJECTION.pdf"),
 ]
 
-BASE = "/home/user/Narrative_AI_Agent_Kabal/test-results"
+BASE = os.path.dirname(os.path.abspath(__file__))
 
 targets = REPORTS
 if len(sys.argv) > 1:

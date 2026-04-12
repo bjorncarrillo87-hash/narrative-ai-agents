@@ -213,8 +213,8 @@ export class GraduationMonitor implements Agent {
     if (Math.random() > 0.4) return;
 
     const demoTokens = [
-      { symbol: 'JUNGLE', mc: Math.random() * 70000 },
-      { symbol: 'KABAL', mc: Math.random() * 50000 },
+      { symbol: 'NARR', mc: Math.random() * 70000 },
+      { symbol: 'SIGNAL', mc: Math.random() * 50000 },
       { symbol: 'AIDOGE', mc: Math.random() * 80000 },
     ];
 

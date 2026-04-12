@@ -3,7 +3,7 @@
 #  Narrative AI — DAILY TEST RUNNER (v9.6 Frozen Build)
 # ══════════════════════════════════════════════════════════════
 #
-#  USAGE:  cd ~/Narrative_AI_Agent_Kabal && bash test-results/run-daily-test.sh
+#  USAGE:  cd ~/narrative-ai-agents && bash test-results/run-daily-test.sh
 #
 #  This script:
 #    1. Checks out the frozen v9.6 commit (dd8be78) in detached HEAD

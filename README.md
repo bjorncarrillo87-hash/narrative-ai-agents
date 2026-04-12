@@ -1,10 +1,10 @@
 # Narrative AI Agents
 
-> Autonomous AI-powered trading agents for Solana memecoins — built for the Colosseum Frontier Hackathon 2026.
+> Autonomous AI-powered trading agents for Solana memecoins ï¿½ built for the Colosseum Frontier Hackathon 2026.
 
 ## What Is This?
 
-Narrative AI is a multi-agent system that autonomously detects emerging narratives and market sentiment across Solana, scores tokens in real time, and executes trades based on quantified signals — without human intervention.
+Narrative AI is a multi-agent system that autonomously detects emerging narratives and market sentiment across Solana, scores tokens in real time, and executes trades based on quantified signals ï¿½ without human intervention.
 
 Built by **Bjorn Carrillo** in partnership with Narrative AI.
 
@@ -14,12 +14,12 @@ Built by **Bjorn Carrillo** in partnership with Narrative AI.
 
 The system runs four specialized agents in parallel:
 
-- **Research Agent** — Monitors pump.fun, Telegram channels, and on-chain activity to detect emerging token narratives
-- **Safety Agent** — Scores every token for rug risk, sniper activity, creator history and holder concentration
-- **Emotion Radar** — Quantifies market mood (FOMO, panic, greed) per token and across the full market
-- **Smart Money Tracker** — Follows known high-performing wallets and detects early entry signals
+- **Research Agent** ï¿½ Monitors pump.fun, Telegram channels, and on-chain activity to detect emerging token narratives
+- **Safety Agent** ï¿½ Scores every token for rug risk, sniper activity, creator history and holder concentration
+- **Emotion Radar** ï¿½ Quantifies market mood (FOMO, panic, greed) per token and across the full market
+- **Smart Money Tracker** ï¿½ Follows known high-performing wallets and detects early entry signals
 
-All agents communicate through a central event bus — no direct agent-to-agent calls.
+All agents communicate through a central event bus ï¿½ no direct agent-to-agent calls.
 
 ---
 
@@ -29,7 +29,7 @@ All agents communicate through a central event bus — no direct agent-to-agent ca
 - Multi-signal token scoring (safety + momentum + social + smart money)
 - Emotion detection (FOMO wave, panic selling, greed peak, euphoria)
 - Smart money wallet tracking with win rate analysis
-- SQLite performance tracking — every alert measured against real outcomes
+- SQLite performance tracking ï¿½ every alert measured against real outcomes
 - Paper trading mode for safe testing
 - Live Solana transaction proof via Solscan
 
@@ -66,6 +66,24 @@ Trading Agent --> executes trade
       v
 Performance Tracker --> measures outcome
 ```
+
+---
+
+## Test Results
+
+5 live test sessions on Solana mainnet (v9.6 frozen build):
+
+| Run | Date | Trades | Win Rate | P&L |
+|-----|------|--------|----------|-----|
+| #1 | 2025-04-01 | 26 | 38% | +74.2% |
+| #2 | 2025-04-01 | 25 | 36% | -96.1% |
+| #3 | 2026-04-03 | 19 | 21% | -105.3% |
+| #4 | 2026-04-04 | 12 | 75% | +270.6% |
+| #5 | 2026-04-05 | 212 | 42% | +774.6% |
+
+**Cumulative: 294 trades, 41% win rate, +918.0% P&L across all sessions.**
+
+Full per-bot breakdowns and analysis in [`test-results/daily-runs.md`](test-results/daily-runs.md).
 
 ---
 

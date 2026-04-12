@@ -1,0 +1,30 @@
+# Environment & secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Wallets
+wallet*.json
+*-keypair.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# PDFs (use markdown versions)
+test-results/*.pdf
