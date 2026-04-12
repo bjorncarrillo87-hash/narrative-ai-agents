@@ -50,28 +50,31 @@ All agents communicate through a central event bus — no direct agent-to-agent ca
 
 \\\
 pump.fun WebSocket
-      ¦
-      ?
-PumpFun Watcher ? token:new event
-      ¦
-      ?
-Safety Agent ? token:safety event
-      ¦
-      ?
-Token Analyzer ? token:scored event
-      ¦
-      ?
-Trading Agent ? executes trade
-      ¦
-      ?
-Performance Tracker ? measures outcome
+      |
+      v
+PumpFun Watcher --> token:new event
+      |
+      v
+Safety Agent --> token:safety event
+      |
+      v
+Token Analyzer --> token:scored event
+      |
+      v
+Trading Agent --> executes trade
+      |
+      v
+Performance Tracker --> measures outcome
 \\\
 
 ---
 
 ## Live Proof
 
-This system was tested live on Solana mainnet. Transaction verified on Solscan.
+This system was tested live on Solana mainnet.
+
+**Verified transaction on Solscan:**
+[View live transaction](https://solscan.io/tx/5Jhc2Li9e7Ra1qDpjAZX3JZc53nMzY4yXAhgeLxzVAhwZHQ7R9ARECZuRmxFiDHbq1wpG1UdeXfnmaKqKznZf8HZ)
 
 ---
 
