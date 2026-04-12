@@ -48,24 +48,24 @@ All agents communicate through a central event bus — no direct agent-to-agent ca
 
 ## Architecture
 
-\\\
+```text
 pump.fun WebSocket
       |
       v
-PumpFun Watcher --> token:new event
+PumpFun Watcher --> token:new
       |
       v
-Safety Agent --> token:safety event
+Safety Agent --> token:safety
       |
       v
-Token Analyzer --> token:scored event
+Token Analyzer --> token:scored
       |
       v
 Trading Agent --> executes trade
       |
       v
 Performance Tracker --> measures outcome
-\\\
+```
 
 ---
 
@@ -90,3 +90,4 @@ GitHub: [@bjorncarrillo87-hash](https://github.com/bjorncarrillo87-hash)
 
 Copyright 2026 Bjorn Carrillo. All Rights Reserved.
 Shared for Colosseum Frontier Hackathon evaluation purposes only.
+
