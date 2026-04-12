@@ -1,1 +1,89 @@
-# narrative-ai-agents
+# Narrative AI Agents
+
+> Autonomous AI-powered trading agents for Solana memecoins — built for the Colosseum Frontier Hackathon 2026.
+
+## What Is This?
+
+Narrative AI is a multi-agent system that autonomously detects emerging narratives and market sentiment across Solana, scores tokens in real time, and executes trades based on quantified signals — without human intervention.
+
+Built by **Bjorn Carrillo** in partnership with Jungle Kabal.
+
+---
+
+## How It Works
+
+The system runs four specialized agents in parallel:
+
+- **Research Agent** — Monitors pump.fun, Telegram channels, and on-chain activity to detect emerging token narratives
+- **Safety Agent** — Scores every token for rug risk, sniper activity, creator history and holder concentration
+- **Emotion Radar** — Quantifies market mood (FOMO, panic, greed) per token and across the full market
+- **Smart Money Tracker** — Follows known high-performing wallets and detects early entry signals
+
+All agents communicate through a central event bus — no direct agent-to-agent calls.
+
+---
+
+## Key Features
+
+- Real-time pump.fun WebSocket monitoring
+- Multi-signal token scoring (safety + momentum + social + smart money)
+- Emotion detection (FOMO wave, panic selling, greed peak, euphoria)
+- Smart money wallet tracking with win rate analysis
+- SQLite performance tracking — every alert measured against real outcomes
+- Paper trading mode for safe testing
+- Live Solana transaction proof via Solscan
+
+---
+
+## Tech Stack
+
+- TypeScript / Node.js
+- Solana Web3 / Helius RPC
+- Jupiter API (trade execution)
+- SQLite (better-sqlite3)
+- Telegram Bot API
+- pump.fun WebSocket
+
+---
+
+## Architecture
+
+\\\
+pump.fun WebSocket
+      ¦
+      ?
+PumpFun Watcher ? token:new event
+      ¦
+      ?
+Safety Agent ? token:safety event
+      ¦
+      ?
+Token Analyzer ? token:scored event
+      ¦
+      ?
+Trading Agent ? executes trade
+      ¦
+      ?
+Performance Tracker ? measures outcome
+\\\
+
+---
+
+## Live Proof
+
+This system was tested live on Solana mainnet. Transaction verified on Solscan.
+
+---
+
+## Author
+
+**Bjorn Carrillo**
+Built independently using Claude AI as development assistant.
+GitHub: [@bjorncarrillo87-hash](https://github.com/bjorncarrillo87-hash)
+
+---
+
+## License
+
+Copyright 2026 Bjorn Carrillo. All Rights Reserved.
+Shared for Colosseum Frontier Hackathon evaluation purposes only.
