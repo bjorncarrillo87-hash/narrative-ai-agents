@@ -5,7 +5,7 @@ import { EventEmitter } from 'events';
 import type { EventMap } from './types.js';
 import { log } from './logger.js';
 
-class JKEventBus {
+class NarrativeEventBus {
   private emitter = new EventEmitter();
 
   constructor() {
@@ -54,6 +54,6 @@ class JKEventBus {
 }
 
 /** Singleton event bus — import this everywhere */
-export const bus = new JKEventBus();
+export const bus = new NarrativeEventBus();
 
 

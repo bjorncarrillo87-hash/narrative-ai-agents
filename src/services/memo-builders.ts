@@ -7,7 +7,7 @@
  */
 
 const MEMO_VERSION = 'v1';
-const MEMO_PREFIX = 'JK';
+const MEMO_PREFIX = 'NAI';
 const MAX_MEMO_BYTES = 566;
 
 /**
@@ -50,7 +50,7 @@ export function generateTradeId(agent: string, token: string, date: Date = new D
 
 /**
  * Build ENTRY memo string.
- * Format: JK|v1|ENTRY|{agent}|{symbol}|{ca}|BUY|{price}|{size}|{score}|{strategy}|{ts}|{tradeId}
+ * Format: NAI|v1|ENTRY|{agent}|{symbol}|{ca}|BUY|{price}|{size}|{score}|{strategy}|{ts}|{tradeId}
  */
 export function buildEntryMemo(
   agent: string,
@@ -93,7 +93,7 @@ export function buildEntryMemo(
 
 /**
  * Build EXIT memo string.
- * Format: JK|v1|EXIT|{agent}|{symbol}|{ca}|SELL|{exitPrice}|{pnlPct}|{pnlSol}|{ts}|{tradeId}
+ * Format: NAI|v1|EXIT|{agent}|{symbol}|{ca}|SELL|{exitPrice}|{pnlPct}|{pnlSol}|{ts}|{tradeId}
  */
 export function buildExitMemo(
   agent: string,
